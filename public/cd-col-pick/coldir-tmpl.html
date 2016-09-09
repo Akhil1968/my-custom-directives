@@ -1,0 +1,21 @@
+Red:<input type="range"
+         min="0" max="255" step="1"
+         ng-model="r">
+         <br>
+Green:<input type="range"
+         min="0" max="255" step="1"
+         ng-model="g">
+         <br>
+Blue:<input type="range"
+         min="0" max="255" step="1"
+         ng-model="b">
+         <br>
+Alpha:<input type="range"
+         min="0" max="1" step="0.01"
+         ng-model="a">
+<div class="well">
+<div style="width: auto; height: 100px; margin-top:5px;
+            background-color: rgba({{ r }}, {{ g }}, {{ b }}, {{ a }});">
+</div>
+RGBA values ({{ r }}, {{ g }}, {{ b }}, {{ a }})
+</div>

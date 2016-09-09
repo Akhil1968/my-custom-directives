@@ -1,1 +1,1 @@
-# Custom directives : AngularJS
+# Custom directives : Some basic, some advanced

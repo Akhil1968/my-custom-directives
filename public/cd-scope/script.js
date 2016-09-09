@@ -5,7 +5,8 @@ app.directive('contentDescriber', function() {
     scope: {
       dirTitle: '@ contentTitle',
       dirPic: '= contentPic',
-      dirContent: '= contentContent'
+      dirContent: '= contentContent',
+      dirFn : '& contentFunction'
     },
     templateUrl: 'contentDescriber.html'
   };
@@ -13,6 +14,9 @@ app.directive('contentDescriber', function() {
 
 app.controller('DataController', function(){
 var self = this;
+self.myFunction = function(){
+	console.log("I am a function in controller");
+}
 self.places = [
 	{
 	 title: "Antelope Canyon, Arizona, USA", 

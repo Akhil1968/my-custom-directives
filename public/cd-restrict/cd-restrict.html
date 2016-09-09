@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="myCustomeDirectiveApp">
 <body >
-  <hello> an xzsdsfasdfadfadf </hello> Element  <br>DA
+  <hello> an xzsdsfasdfadfadf </hello> Element  <br>
   <h1 data-hello>a data xvxcxcvxcvxbc</h1> data-Attribute  <br>
-  <div hello> an Attribute</div> Attribute  <br>A
-  <!-- directive: hello --> Comment  
+  <span hello> an Attribute</span> Attribute  <br>
+  <!-- directive:hello --> Comment  
   <p class="hello"></p> Class
   
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js">
@@ -14,7 +14,7 @@ var app = angular.module('myCustomeDirectiveApp', []);
 app.directive('hello', function (){
   return {
     restrict: 'CEMA', // CEMA C: class, E: element, M: coMments, A: attributes
-    replace: false, // replaces original content with template
+    replace: true, // replaces original content with template
     template: '<span><br>Good Morning</span>'
   };
 });

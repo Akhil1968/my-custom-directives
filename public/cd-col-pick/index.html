@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  </head>
+  <body ng-app="ngAdvanced" class="container">
+    <h1>A Custom Directive using $parse and $watch</h1>
+    
+   <div ng-controller="TheController as ctrl">
+      <col-dir init-r="125"
+                    init-g="225"
+                    init-b="100"
+                    init-a="1.0"
+                    on-change="ctrl.onColorChange(r,g,b,a)">
+      </col-dir>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+   </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js">
+   </script> 
+    <script src="script.js"></script>
+  </body>
+</html>
