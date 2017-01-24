@@ -1,5 +1,5 @@
 {
-  "name": "custom directives",
+  "name": "custdir",
   "version": "1.0.0",
   "description": "node  angularjs",
   "main": "app.js",
